@@ -4,10 +4,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function HomeLinks() {
   return (
-    <div className="flex grid text-center my-10 px-2 gap-2 lg:grid-cols-4 font-bold dark:invert">
-      <a
+    <div className="flex grid text-center my-10 px-20 gap-10 lg:grid-cols-4 font-bold dark:invert">
+      <div
         href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-        className="group rounded-lg border border-transparent px-5 py-4 hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700"
+        className="justifyCenter group rounded-lg border border-transparent px-5 py-4 hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -15,11 +15,11 @@ export default function HomeLinks() {
           Create
           <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
         </h2>
-        <p className={`${inter.className} m-0 max-w-[30ch] text-md opacity-70`}>
+        <p className={`${inter.className} m-0 text-md opacity-70 w-full`}>
           Choose from a selectiion of templates and start adding content to your
           profile
         </p>
-      </a>
+      </div>
 
       <a
         href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
@@ -32,7 +32,7 @@ export default function HomeLinks() {
         >
           Connect
         </h2>
-        <p className={`${inter.className} m-0 max-w-[30ch] text-md opacity-70`}>
+        <p className={`${inter.className} m-0 text-md opacity-70 justify`}>
           Connect with like-minded people who share your passions and interests,
           and discover new ones
         </p>
@@ -48,7 +48,7 @@ export default function HomeLinks() {
           Style
           <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
         </h2>
-        <p className={`${inter.className} m-0 max-w-[30ch] text-md opacity-70`}>
+        <p className={`${inter.className} m-0 text-md opacity-70`}>
           Customize your profile to highlight the collections important to you
         </p>
       </a>
@@ -63,7 +63,7 @@ export default function HomeLinks() {
           Share
           <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"></span>
         </h2>
-        <p className={`${inter.className} m-0 max-w-[30ch] text-md opacity-70`}>
+        <p className={`${inter.className} m-0 text-md opacity-70`}>
           Generate links to share your entire profile or specific collections
         </p>
       </a>
